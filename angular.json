@@ -31,9 +31,20 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/chartist/dist/chartist.css",
+              "node_modules/prism-themes/themes/prism-atom-dark.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            	"node_modules/marked/lib/marked.js",
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-css.min.js",
+              "node_modules/prismjs/components/prism-javascript.min.js",
+              "node_modules/prismjs/components/prism-jsx.min.js",
+              "node_modules/prismjs/components/prism-tsx.min.js",
+              "node_modules/prismjs/components/prism-python.min.js",
+              "node_modules/prismjs/components/prism-graphql.min.js"
+        	]
           },
           "configurations": {
             "production": {
