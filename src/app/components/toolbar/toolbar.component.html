@@ -1,0 +1,19 @@
+<div class="toolbar h-16 flex flex-row items-center right-0 left-0 top-0 fixed dark:text-white text-white xl:pl-6 xl:pr-6 md:pl-3 md:pr-3 justify-between">
+    <h2 class="m-0">
+        <span class="text-green-400 m-0 font-bold">Marco</span>
+        <span class="m-0">Calderon</span>
+    </h2>
+    <div class="flex">
+        <h5 class="section" [class.text-green-400]="section === 'about'" [class.font-bold]="section === 'about'">About Me</h5>
+        <h5 class="section" [class.text-green-400]="section === 'services'" [class.font-bold]="section === 'services'">Services</h5>
+        <h5 class="section" [class.text-green-400]="section === 'experiences'" [class.font-bold]="section === 'experiences'">Experience</h5>
+        <h5 class="section" [class.text-green-400]="section === 'projects'" [class.font-bold]="section === 'projects'">Projects</h5>
+    </div>
+    <div class="flex items-center">
+        <h5 class="section">GitHub</h5>
+        <div class="btn">
+            <h4>No pls</h4>
+            <div class="btn-color"></div>
+        </div>
+    </div>
+</div>
