@@ -7,7 +7,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { ChartistModule } from 'ng-chartist';
-import { MarkdownModule } from 'ngx-markdown';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { SkillsComponent } from './containers/skills/skills.component';
 import { SkillRowComponent } from './components/skill-row/skill-row.component';
 import { EntryComponent } from './pages/blog/entry/entry.component';
@@ -27,7 +27,20 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ChartistModule,
     HttpClientModule,
-    MarkdownModule.forRoot({ loader: HttpClientModule }),
+    MarkdownModule.forRoot({
+      loader: HttpClientModule,
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          breaks: false,
+          pedantic: false,
+          smartLists: true,
+          smartypants: false,
+          
+        },
+      },
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
