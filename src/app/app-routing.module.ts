@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SampleComponent } from './pages/blog/sample/sample.component';
+import { EntryComponent } from './pages/blog/entry/entry.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 const routes: Routes = [
@@ -9,8 +9,8 @@ const routes: Routes = [
     component: HomePageComponent,
   },
   {
-    path: 'blog/sample',
-    component: SampleComponent,
+    path: 'blog/:id',
+    component: EntryComponent,
   }
 ];
 

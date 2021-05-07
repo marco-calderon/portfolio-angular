@@ -8,24 +8,26 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { ChartistModule } from 'ng-chartist';
 import { MarkdownModule } from 'ngx-markdown';
-import { SampleComponent } from './pages/blog/sample/sample.component';
 import { SkillsComponent } from './containers/skills/skills.component';
 import { SkillRowComponent } from './components/skill-row/skill-row.component';
+import { EntryComponent } from './pages/blog/entry/entry.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     HomePageComponent,
-    SampleComponent,
     SkillsComponent,
-    SkillRowComponent
+    SkillRowComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ChartistModule,
-    MarkdownModule.forRoot(),
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClientModule }),
   ],
   providers: [],
   bootstrap: [AppComponent],
