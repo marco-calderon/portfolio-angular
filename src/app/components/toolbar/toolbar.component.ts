@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   section = 'about';
+  menuCollapsed = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onMenuToggle() {
+    this.menuCollapsed = !this.menuCollapsed;
   }
 
 }
