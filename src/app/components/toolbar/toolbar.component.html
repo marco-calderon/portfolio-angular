@@ -1,5 +1,5 @@
 <div class="toolbar">
-    <div class="dropdown absolute flex flex-col items-center justify-center h-32 top-16 left-0 right-0 transition-transform z-10 sm:absolute md:hidden shadow-md" [class.collapsed]="menuCollapsed">
+    <div class="dropdown absolute flex flex-col items-center justify-between h-36 top-16 left-0 right-0 transition-transform z-10 sm:absolute md:hidden shadow-md pb-8" [class.collapsed]="menuCollapsed">
         <h5 class="dropdown-section my-1" [class.active]="section === 'about'">About Me</h5>
         <h5 class="dropdown-section my-1" [class.active]="section === 'services'">Services</h5>
         <h5 class="dropdown-section my-1" [class.active]="section === 'experiences'">Experience</h5>
@@ -21,7 +21,7 @@
             <h5 class="section" [class.active]="section === 'projects'">Projects</h5>
         </div>
         <div class="hidden items-center justify-center sm:hidden md:flex">
-            <h5 class="section flex flex-row items-center"><span><img src="./assets/svg/github.svg" class="mr-2" /></span>GitHub</h5>
+            <a href="https://github.com/flexocarpius" target="_blank" class="section flex flex-row items-center"><img src="./assets/svg/github.svg" class="mr-2" />GitHub</a>
             <button class="btn">Hire</button>
         </div>
     </div>
