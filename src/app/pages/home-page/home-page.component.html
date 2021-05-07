@@ -1,9 +1,22 @@
 <app-toolbar></app-toolbar>
-<div class="container">
-    <x-chartist
+<div class="container max-w-full">
+  <div class="header flex flex-col items-center justify-center sm:pl-6 sm:pr-6 pl-6 pr-6 text-center">
+    <h3 class="text-base">
+      <span class="text-green-400 font-bold "><</span>
+      Hi, I’m Marco a Full Stack Web Developer
+      <span class="text-green-400 font-bold ">/></span>
+    </h3>
+    <h3 class="text-base">
+      I'm here to help you to build successful projects/software products.
+    </h3>
+  </div>
+  <div class="skills flex justify-center items-center flex-row">
+    <app-skills></app-skills>
+  </div>
+    <!-- <x-chartist
       [type]="type"
       [data]="data"
       [options]="options"
       [events]="events"
-    ></x-chartist>
+    ></x-chartist> -->
 </div>

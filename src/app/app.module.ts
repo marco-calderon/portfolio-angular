@@ -9,13 +9,17 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ChartistModule } from 'ng-chartist';
 import { MarkdownModule } from 'ngx-markdown';
 import { SampleComponent } from './pages/blog/sample/sample.component';
+import { SkillsComponent } from './containers/skills/skills.component';
+import { SkillRowComponent } from './components/skill-row/skill-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     HomePageComponent,
-    SampleComponent
+    SampleComponent,
+    SkillsComponent,
+    SkillRowComponent
   ],
   imports: [
     BrowserModule,

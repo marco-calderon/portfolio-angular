@@ -1,0 +1,6 @@
+<div class="pl-8 pr-8 w-full flex flex-col items-center">
+    <h4 class="text-lg text-center mb-8">Skills</h4>
+    <div class="w-full md:w-2/3 sm:w-full">
+        <app-skill-row *ngFor="let skill of skills" [skill]="skill"></app-skill-row>
+    </div>
+</div>

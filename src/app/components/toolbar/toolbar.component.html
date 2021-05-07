@@ -1,5 +1,5 @@
 <div class="toolbar">
-    <div class="dropdown absolute flex flex-col items-center justify-between h-36 top-16 left-0 right-0 transition-transform z-10 sm:absolute md:hidden shadow-md pb-8" [class.collapsed]="menuCollapsed">
+    <div class="dropdown fixed flex flex-col items-center justify-between h-36 top-16 left-0 right-0 transition-transform z-10 sm:fixed md:hidden shadow-md pb-8" [class.collapsed]="menuCollapsed">
         <h5 class="dropdown-section my-1" [class.active]="section === 'about'">About Me</h5>
         <h5 class="dropdown-section my-1" [class.active]="section === 'services'">Services</h5>
         <h5 class="dropdown-section my-1" [class.active]="section === 'experiences'">Experience</h5>
