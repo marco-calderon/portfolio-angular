@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,12 +8,14 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { ChartistModule } from 'ng-chartist';
 import { MarkdownModule } from 'ngx-markdown';
+import { SampleComponent } from './pages/blog/sample/sample.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,9 @@ import { MarkdownModule } from 'ngx-markdown';
     MarkdownModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

@@ -5,4 +5,20 @@
 
 body {
     font-family: 'IBM Plex Mono', monospace;
+    background-color: #333B41;
+    @apply dark:text-white;
+    @apply text-white;
+}
+
+.ct-label {
+    font-size: 15px;
+    color: #fff;
+}
+
+.ct-grids line {
+    color: #fff;
+}
+
+.ct-line {
+    stroke-dasharray: 30px 5px;
 }
