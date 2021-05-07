@@ -1,4 +1,4 @@
-This project was developed for giving the user important details about the comparison between the USD and MXN. It compares its values and gives an insight about the top buy/sell prices of the currency.
+| This project was developed for giving the user important details about the comparison between the USD and MXN. It compares its values and gives an insight about the top buy/sell prices of the currency. | ![First screenshot](https://user-images.githubusercontent.com/47753684/110555203-05571980-80f1-11eb-8101-9eecec1d8ef6.jpg) |
 
 The source data was mined out a public website that had the prices of the USD updated daily. Since this didn’t provided much information (like charts, percentage compared to the previous day, etc.), this project was born.
 

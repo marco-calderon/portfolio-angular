@@ -9,7 +9,7 @@ export class BlogPostsService {
     {
       id: 'dollar-insights',
       title: 'Dollar Insights',
-      content: 'https://github.com/flexocarpius/portfolio-angular/files/6443099/dollar-insights.md',
+      content: 'https://flexocarpius.github.io/portfolio-angular/src/app/pages/blog/contents/dollar-insights.md',
       created: new Date(),
       modified: new Date(),
       author: 'Marco Calderon',
